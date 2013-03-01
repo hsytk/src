@@ -31,7 +31,7 @@ public class Main {
 			case 4: System.out.println(array.searchByEmail());// search contacts by email address
 					break;
 			case 5: System.out.println(array.searchByZip());//display all contacts who have the same zip code
-					break;
+					break; //this is a test of Git change
 			case 6: System.exit(0); // exit the program when selected
 			}
 		}
