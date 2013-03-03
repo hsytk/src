@@ -1,10 +1,9 @@
 import java.util.*;
-public class People {
+public class People implements java.io.Serializable{
 	public String lastName;
 	public String firstName;
 	public String emailAddress;
 	public int zip;
-	Scanner scan = new Scanner(System.in);
 	StreetAddress address= new StreetAddress();
 	public void setLastName(String newLastName){
 		lastName = newLastName;
@@ -15,17 +14,22 @@ public class People {
 	public void setemailAddress(String newEmail){
 		emailAddress = newEmail;
 	}
-	public void setAddress(){
-		System.out.println("House: ");
-		address.setHouse(scan.nextLine());
-		System.out.println("City: ");
-		address.setCity(scan.nextLine());
-		System.out.println("State: ");
-		address.setState(scan.nextLine());
-		System.out.println("Country: ");
-		address.setCountry(scan.nextLine());
-		System.out.println("Zip: ");
-		address.setZip(scan.nextLine());
+	public void setHouse(String newHouse){
+		address.setHouse(newHouse);
 	}
-
+	public void setCity(String newCity){
+		address.setCity(newCity);
+	}
+	public void setState(String newState){
+		address.setState(newState);
+	}
+	public void setCountry(String newCountry){
+		address.setCountry(newCountry);
+	}
+	public void setZip(String newZip){
+		address.setZip(newZip);
+	}
+	public String toString(){
+		return lastName + firstName + emailAddress + address.toString();
+	}
 }

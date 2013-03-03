@@ -26,7 +26,7 @@ public class Main {
 					break;
 			case 2: System.out.println(array.toString());// print out all contacts
 					break;
-			case 3: System.out.println(array.searchByName());// search contacts by last name
+			case 3: array.searchByName();// search contacts by last name
 					break;
 			case 4: System.out.println(array.searchByEmail());// search contacts by email address
 					break;

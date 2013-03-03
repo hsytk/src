@@ -1,5 +1,5 @@
 
-public class StreetAddress { 
+public class StreetAddress implements java.io.Serializable { 
 	/**
 	 * define all the variables
 	 */
